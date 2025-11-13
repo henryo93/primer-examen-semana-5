@@ -1,8 +1,7 @@
 const express = require('express')
-const cors = require("cors")
 const { where } = require('sequelize')
 const Gasto = require('./Modelos/Gasto')
-app.listen(5000, () => console.log("Backend en http://localhost:5000"));
+
 var cors = require('cors')
 
 const app= express()

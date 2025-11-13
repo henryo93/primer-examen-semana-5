@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { useContexto } from "@/contexto/ContextoAplicacion";
+import { useContexto } from "../contexto/contextoAplicacion";
 
 export default function PaginaGastos() {
   const { agregarGasto, gastos, presupuesto } = useContexto();

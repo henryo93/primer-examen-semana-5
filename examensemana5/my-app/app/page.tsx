@@ -1,3 +1,7 @@
+
+import Link from "next/link";
+import { use } from "react";
+
 export default function Inicio() {
   return (
     <div className="p-6">
@@ -5,9 +9,9 @@ export default function Inicio() {
       <p>Selecciona una opción:</p>
 
       <div className="flex flex-col gap-3 mt-4">
-        <a className="underline" href="/iniciar-sesion">Iniciar Sesión</a>
-        <a className="underline" href="/presupuesto-mensual">Presupuesto Mensual</a>
-        <a className="underline" href="/registro-gastos">Registro de Gastos</a>
+        <Link href="/iniciar-sesion" className="underline">Iniciar Sesión</Link>
+        <Link href="/presupuesto-mensual" className="underline">Presupuesto Mensual</Link>
+        <Link href="/registro-gastos" className="underline">Registro de Gastos</Link>
       </div>
     </div>
   );

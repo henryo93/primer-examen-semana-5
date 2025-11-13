@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { useContexto } from "@/contexto/ContextoAplicacion";
+import { useContexto } from "../contexto/contextoAplicacion";
 import Link from "next/link";
 
 export default function PaginaPresupuesto() {
