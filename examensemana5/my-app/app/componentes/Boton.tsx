@@ -1,0 +1,1 @@
+export default function Boton({texto,onClick}:{texto:string,onClick:()=>void}){return(<button className="bg-blue-600 text-white p-2" onClick={onClick}>{texto}</button>);}

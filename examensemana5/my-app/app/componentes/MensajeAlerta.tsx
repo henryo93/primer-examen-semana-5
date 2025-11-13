@@ -1,0 +1,1 @@
+export default function MensajeAlerta({texto,color}:{texto:string,color:string}){return(<div className={color}>{texto}</div>);}
