@@ -10,9 +10,9 @@ type Gasto = {
 
 type TipoContexto = {
   presupuesto: number;
-  setPresupuesto: (v: number) => void;
+  setPresupuesto: (presupuesto: number) => void;
   gastos: Gasto[];
-  agregarGasto: (g: Gasto) => void;
+  agregarGasto: (gasto: Gasto) => void;
 };
 
 const ContextoAplicacion = createContext<TipoContexto | null>(null);
@@ -21,8 +21,8 @@ export function ProveedorContexto({ children }: { children: React.ReactNode }) {
   const [presupuesto, setPresupuesto] = useState(0);
   const [gastos, setGastos] = useState<Gasto[]>([]);
 
-  const agregarGasto = (g: Gasto) => {
-    setGastos([...gastos, g]);
+  const agregarGasto = (gasto: Gasto) => {
+    setGastos([...gastos, gasto]);
   };
 
   return (

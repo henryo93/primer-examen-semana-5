@@ -19,12 +19,14 @@ export default function PaginaGastos() {
     });
 
     agregarGasto({ categoria, monto: Number(monto), fecha, descripcion });
+    cargar();
   };
 
+
   const cargar = async () => {
-    const r = await fetch("http://localhost:5000/gasto");
-    const j = await r.json();
-    setLista(j);
+    const response = await fetch("http://localhost:5000/gasto");
+    const lista = await response.json();
+    setLista(lista);
   };
 
   useEffect(() => { cargar(); }, []);
